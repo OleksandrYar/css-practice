@@ -227,8 +227,21 @@
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
-  color: #007BFF;
+  color: #007bff;
 }
 .link_item:hover {
   text-decoration: underline;
+}
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 800px;
+  align-content: flex-start;
+}
+.flex_item {
+  width: 250px;
+  background: gray;
+  margin: 15px;
 }

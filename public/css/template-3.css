@@ -66,6 +66,9 @@
   font-size: var(--size-d);
   text-decoration: none;
   line-height: 100%;
+
+  transition-property: color;
+  transition-duration: 1s;
 }
 .nav_link:hover {
   text-decoration: underline;
@@ -158,13 +161,16 @@
   text-decoration: none;
   padding: var(--space-m) var(--space-xm);
   border-radius: var(--border-radius);
+
+  transition: opacity 1s, background-color 1s;
 }
 .card_button {
   color: var(--color-white);
-  background: var(--color-primary);
+  background-color: var(--color-primary);
 }
 .button:hover {
   opacity: 0.7;
+  background-color: yellow;
 }
 .form {
   display: flex;

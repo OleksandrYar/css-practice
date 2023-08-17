@@ -1,16 +1,21 @@
 :root {
   --color-white: #fff;
   --color-text: #9ca3af;
+  --color-hover: rgba(128, 72, 201, 0.587);
 
   --size-s: 14px;
   --size-d: 16px;
 
+  --space-xxs: 6px;
   --space-d: 12px;
+  --space-m: 16px;
 
   --weight-text: 400;
   --weight-title: 700;
 
   --width-title: 600px;
+
+  --radius-d: 10px;
 }
 
 /* ************ */
@@ -36,7 +41,7 @@ body {
 
 .header_info {
   display: flex;
-  padding: 12px 0px;
+  padding: var(--space-d) 0px;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
@@ -51,18 +56,18 @@ body {
 .ad {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: var(--space-xxs);
   text-decoration: none;
   color: var(--color-white);
   transition: color 1s;
 }
 .ad:hover {
-  color: rgba(128, 72, 201, 0.587);
+  color: var(--color-hover);
 }
 .ad_icon {
   width: 30px;
   display: flex;
-  padding: 2px 6px;
+  padding: 2px var(--space-xxs);
   align-items: flex-start;
   gap: 10px;
   border-radius: 4px;
@@ -84,7 +89,7 @@ body {
   padding: 8px var(--space-d);
   align-items: flex-start;
   gap: 10px;
-  border-radius: 10px;
+  border-radius: var(--radius-d);
   background: #885ffb;
   font-size: var(--size-s);
   font-weight: var(--weight-title);
@@ -105,7 +110,7 @@ body {
   transition: color 1s;
 }
 .header_link:hover {
-  color: rgba(128, 72, 201, 0.587);
+  color: var(--color-hover);
 }
 
 .hero {
@@ -148,7 +153,7 @@ body {
   padding: var(--space-d);
   align-items: center;
   gap: var(--space-d);
-  border-radius: 10px;
+  border-radius: var(--radius-d);
   background: #885ffb;
   color: var(--color-white);
   font-size: var(--size-d);
@@ -217,7 +222,7 @@ body {
   align-items: center;
   gap: 8px;
   border: 1px solid var(--color-text);
-  border-radius: 10px;
+  border-radius: var(--radius-d);
   transition: opacity 1s;
 }
 .articles_header_button:hover {
@@ -238,7 +243,7 @@ body {
 }
 .card_image_new {
   display: inline-flex;
-  padding: 2px 6px;
+  padding: 2px var(--space-xxs);
   align-items: flex-start;
   gap: 10px;
   border-radius: 4px;
@@ -267,7 +272,7 @@ body {
   padding: 8px 16px;
   align-items: center;
   gap: 8px;
-  border-radius: 10px;
+  border-radius: var(--radius-d);
   background: #885ffb;
   color: var(--color-white);
   font-size: var(--size-s);
@@ -309,7 +314,7 @@ body {
   transition: color 1s;
 }
 .footer_link:hover {
-  color: rgba(128, 72, 201, 0.587);
+  color: var(--color-hover);
 }
 .footer_copyright {
   color: var(--color-text);

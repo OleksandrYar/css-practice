@@ -1,0 +1,19 @@
+{{>CSS7-header data=this}}
+
+{{#with hero}}
+<div class="hero">
+    <h2 class="hero_title">{{title}}</h1>
+        <p class="hero_description">{{description}}</p>
+        <a type="button" href="{{button.url}}" class="hero_button">{{button.text}}</a>
+</div>
+{{/with}}
+{{#with about}}
+<div class="about">
+    <h3 class="about_title">{{heading}}</h2>
+        <p class="about_info">{{info}}</p>
+</div>
+{{/with}}
+
+{{>cardArticles data=this}}
+
+{{>footerCSS7 data=this}}

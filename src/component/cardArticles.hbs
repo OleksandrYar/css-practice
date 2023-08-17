@@ -1,0 +1,20 @@
+{{#with data}}
+<div class="articles_header">
+    <h1 class="articles_title">Our articles</h1>
+    <button class="articles_header_button">View all</button>
+</div>
+<main class="articles">
+    {{#each articles}}
+    <div class="card">
+        {{#if isNew}}
+        <img src="{{photo}}" alt="#" class="card_image"><span class="card_image_new">NEW</span>
+        {{else}}
+        <img src="{{photo}}" alt="#" class="card_image">
+        {{/if}}
+        <h2 class="card_title">{{name}}</h2>
+        <p class="card_text">{{description}}</p>
+        <a type="button" href="#" class="card_button" id="{{id}}">Read All</a>
+    </div>
+    {{/each}}
+</main>
+{{/with}}

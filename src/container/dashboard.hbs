@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Dashboard page
+    </title>
+    <meta charset='utf-8' />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav2/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav2/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav2/favicon-16x16.png">
+    <link rel="manifest" href="/fav2/site.webmanifest">
+    <link rel="mask-icon" href="/fav2/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href='css/normalize.css' rel='stylesheet' />
+    <link href='css/dashboard.css' rel='stylesheet' />
+
+    <meta name="viewport"
+        content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+
+<body>
+    <div class="page page--dashboard">
+        <aside class="page__aside aside vertical vertical--big">
+            <div class="text aside__logo">
+                Sidebar
+            </div>
+            <nav class="vertical vertical--small">
+                <a href="#" class="nav-button nav-button--active click">
+                    <span class="icon nav-button__icon"
+                        style="background-image: url('/css/svg/slack/dashboard/nav/home.svg')">
+
+                    </span>
+                    <span class="text text--light">
+                        Home
+                    </span>
+                </a>
+                <a href="#" class="nav-button click">
+                    <span class="icon nav-button__icon"
+                        style="background-image: url('/css/svg/slack/dashboard/nav/table.svg')">
+
+                    </span>
+                    <span class="text text--light">
+                        Orders
+                    </span>
+                </a>
+                <a href="#" class="nav-button click">
+                    <span class="icon nav-button__icon"
+                        style="background-image: url('/css/svg/slack/dashboard/nav/grid.svg')">
+
+                    </span>
+                    <span class="text text--light">
+                        Products
+                    </span>
+                </a>
+            </nav>
+        </aside>
+        <header class="layout header header__content text--small">
+            {{!-- <label class="text vertical--small"></label> --}}
+            <div class="header__search relative">
+                <input type="text" placeholder="Search" class="text field field--header">
+                <span class="icon header__icon-search"
+                    style="background-image: url('/css/svg/slack/dashboard/header/search.svg')"></span>
+                <span class="icon header__icon-settings icon--button icon--color-blue click"
+                    style="background-image: url('/css/svg/slack/dashboard/header/settings.svg')"></span>
+            </div>
+
+
+            <div class="header__icon-list">
+                <span class="icon icon--header-size click"
+                    style="background-image: url('/css/svg/slack/dashboard/header/signal.svg')"></span>
+                <span class="icon icon--header-size icon--background--symbol click"
+                    style="background-image: url('/css/svg/slack/dashboard/header/symbol.svg')"></span>
+                <span class="icon icon--header-size click"
+                    style="background-image: url('/css/svg/slack/dashboard/header/bell.svg')"></span>
+            </div>
+        </header>
+        <main class="main">
+            <div class="layout">
+                <section class="box analityc__block">
+                    <div class="analityc analityc--double analityc--purple">
+                        <span class="icon analityc__button icon--button icon--color-purple click"
+                            style="background-image: url('/css/svg/slack/dashboard/main/money.svg')"></span>
+                        <div class="relative vertical vertical--small">
+                            <div class="analityc__title text text--light">$500.00</div>
+                            <div class="analityc__info text text--small text--lighter">Total earning</div>
+                            <span class="icon analityc__arrow click"
+                                style="background-image: url('/css/svg/slack/dashboard/main/arrow.svg')"></span>
+                        </div>
+                    </div>
+                    <div class="analityc analityc--double analityc--blue">
+                        <span class="icon analityc__button icon--button icon--color-blue click"
+                            style="background-image: url('/css/svg/slack/dashboard/main/order.svg')"></span>
+                        <div class="relative vertical vertical--small">
+                            <div class="analityc__title text text--light">$961</div>
+                            <div class="analityc__info text text--small text--lighter">Total Income</div>
+                        </div>
+                    </div>
+                    <div class="analityc analityc--blue analityc--right">
+                        <span class="icon analityc__button icon--button icon--color--blue--right click"
+                            style="background-image: url('/css/svg/slack/dashboard/main/money.svg')"></span>
+                        <div class="relative vertical vertical--xsmall">
+                            <div class="analityc__title--right text text--light">$203k</div>
+                            <div class="analityc__info text text--small text--lighter">Total Order</div>
+                        </div>
+                    </div>
+                    <div class="analityc analityc--right">
+                        <span class="icon analityc__button icon--button icon--color-yellow click"
+                            style="background-image: url('/css/svg/slack/dashboard/main/shop.svg')"></span>
+                        <div class="relative vertical vertical--xsmall">
+                            <div class="analityc__title--right text text--black">$203k</div>
+                            <div class="analityc__info text text--small text--gray">Total Order</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="layout purchase">
+                <div class="purchase__list">
+                    <h2 class="text--heading">Purchase list</h2>
+                    <hr class="divider">
+                    <div class="purchase__info">
+                        <div class="text info__text">ID437661
+                            <pre>May 11, 2023, 14:21</pre>
+                        </div>
+                        <div class="text info__text">AirOn ProCam
+                            <pre>7/8 USB Type-C</pre>
+                        </div>
+                        <div class="text info__text">132.32 EUR
+                            <pre class="text--warning">Not paid</pre>
+                        </div>
+                        <div class="text info__text">Customer
+                            <pre>robin@com.de</pre>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="purchase__info">
+                        <div class="text info__text">ID437661
+                            <pre>May 11, 2023, 14:21</pre>
+                        </div>
+                        <div class="text info__text">PHILIPS Essential
+                            <pre>HD9200/90</pre>
+                        </div>
+                        <div class="text info__text">543 USD
+                            <pre class="text--success">Pay by  Stripe</pre>
+                        </div>
+                        <div class="text info__text">Customer
+                            <pre>dima@com.ua</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment">
+                    <h3 class="text--heading">Payment</h3>
+                    <hr class="divider">
+                    <div class="radio__block">
+                        <div class="radio__type text">
+                            <input class="radio" type="radio" id="credit card" name="#" value="credit card" checked />
+                            <label for="credit card">Credit card</label>
+                        </div>
+
+                        <div class="radio__type">
+                            <input class="radio" type="radio" id="debit card" name="#" value="debit card" />
+                            <label for="debit card">Debit card</label>
+                        </div>
+
+                        <div class="radio__type">
+                            <input class="radio" type="radio" id="paypal" name="#" value="paypal" />
+                            <label for="paypal">PayPal</label>
+                        </div>
+                    </div>
+                    <section class="select__fields">
+                        <div class="field__input">
+                            <span class="input__title">Name on card</span>
+                            <input class="input" type="text">
+                        </div>
+                        <div class="text field__input">
+                            <span class="input__title">Credit card number</span>
+                            <input class="input" type="text">
+                        </div>
+                        <div class="field__input">
+                            <span class="input__title">Expiration</span>
+                            <input class="input" type="text">
+                        </div>
+                        <div class="field__input">
+                            <span class="input__title">CVV</span>
+                            <input class="input" type="text">
+                        </div>
+                    </section>
+                    <hr class="divider">
+                    <div class="select__block">
+                        <div class="relative click">
+                            <span class="text">Country</span>
+                            <div class="field field--select">
+                                <span class="text">Choose...</span>
+                                <span class="icon field-icon__choose"
+                                    style="background-image: url('/css/svg/slack/dashboard/main/choose.svg')"></span>
+                            </div>
+                            <select class="field__select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="relative click">
+                            <span class="text">State</span>
+                            <div class="field field--select">
+                                <span class="text">Choose...</span>
+                                <span class="icon field-icon__choose"
+                                    style="background-image: url('/css/svg/slack/dashboard/main/choose.svg')"></span>
+                            </div>
+                            <select class="field__select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <button class="payment__button text text--light click">
+                        Continue to checkout
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
